@@ -1,0 +1,31 @@
+program AgregarAlFinalLista;
+Type
+  Lista = ^ nodo;
+  nodo = record
+       Datos: info; 
+       Sig: Lista;
+ End;
+ 
+ {-------------------------------------------------------------------------------}
+ procedure AgregarAlFinal (var pri: lista; per: persona); 
+var  act, nue : lista;
+ begin 
+ new (nue);
+ nue^.datos:= per;
+ nue^.sig := NIL;
+ if pri <> Nil then begin
+                 act := pri ;
+                 while  (act^.sig <> NIL ) do act := act^.sig ;
+                 act^.sig := nue ;
+               end
+               else
+                 pri:= nue;
+ end;
+ {-------------------------------------------------------------------------------}
+ 
+ Var
+  L : Lista;
+  
+ begin
+   L:=nil;
+ end.
