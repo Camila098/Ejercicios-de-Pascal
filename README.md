@@ -1,2 +1,2 @@
 # Ejercicios-de-Pascal
-ejercicios usando programación imperativa
+ejercicios de la materia Programacion II usando programación imperativa
